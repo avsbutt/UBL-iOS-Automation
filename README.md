@@ -1,0 +1,1 @@
+UBL’s Digital Banking Services continue to be the hallmark in the Pakistani banking space. With its digital transformation strategy, the Bank is actively delivering innovative digital solutions and providing easy access to financial services in a seamless and convenient manner. The Bank’s digitally registered customer base now stands at over 4.1 million customers.
