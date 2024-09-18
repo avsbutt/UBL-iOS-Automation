@@ -8,7 +8,7 @@ import Pages.Config.ConfigReader;
 import org.openqa.selenium.By;
 import static Pages.Base.BasePage.driver;
 
-public class AddIbanPayee {
+public class AddIbanToPayee {
     WaitUtils waitUtils = new WaitUtils(driver);  // Initialize WaitUtils with the driver
     AlertsHandleUtils alertsHandleUtils = new AlertsHandleUtils();
    private final By IBANBtn = new By.ByXPath("//XCUIElementTypeStaticText[@name=\"\u200EIBAN\"]");

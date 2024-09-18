@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 
 import static Pages.Base.BasePage.driver;
 
-public class DeleteIbanFromPayeeList {
+public class DeleteIbanFromPayee {
     WaitUtils waitUtils = new WaitUtils(driver);  // Initialize WaitUtils with the driver
     //@Test
     public void deletepayeeAction() throws InterruptedException {
@@ -21,8 +21,8 @@ public class DeleteIbanFromPayeeList {
         By payanyoneLocator = GlobalLocators.payanyoneMenu();
 
 
-        waitUtils.waitForElementToBeClickable(paymentsLocator); //Click Payments Menu
-        waitUtils.waitForElementToBeClickable(payanyoneLocator); // Click Payanyone Menu
+        waitUtils.waitForElementToBeClickable(paymentsLocator).click(); //Click Payments Menu
+        waitUtils.waitForElementToBeClickable(payanyoneLocator).click(); // Click Payanyone Menu
         ScrollToUtils.scrollToText(driver, configReader.getIBAN()); // Scroll to IBAN
         //System.out.println("IBAN Found");
         driver.findElement(deleteBtn).click();

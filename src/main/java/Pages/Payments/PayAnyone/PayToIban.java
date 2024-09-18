@@ -19,15 +19,15 @@ public class PayToIban {
         By continueLocator = GlobalLocators.continueBtn();
 
 
-        waitUtils.waitForElementToBeClickable(paymentsLocator); //Click Payments Menu
-        waitUtils.waitForElementToBeClickable(payanyoneLocator); // Click Payanyone Menu
+        waitUtils.waitForElementToBeClickable(paymentsLocator).click(); //Click Payments Menu
+        waitUtils.waitForElementToBeClickable(payanyoneLocator).click(); // Click Payanyone Menu
         FeatureScreenHandleUtils.ClickGetStartedIfFeatureScreenAppear(); // Wait for the banner to appear ()
         ScrollToUtils.scrollToText(driver, configReader.getIBAN()); // Scroll to IBAN
         System.out.println("IBAN Found");
         //   ---#########----API CALL-----#########
-        waitUtils.waitForElementToBeClickable(paynowLocator);
+        waitUtils.waitForElementToBeClickable(paynowLocator).click();
         //    ---#########----API CALL-----#########
-        waitUtils.waitForElementToBeClickable(continueLocator);
+        waitUtils.waitForElementToBeClickable(continueLocator).click();
         // repeatedFunction.waitForElementToBeClickable(selectpurposeLocator);
         // GlobalLocators.BillpaymentOptn();
         //Thread.sleep(2000);
