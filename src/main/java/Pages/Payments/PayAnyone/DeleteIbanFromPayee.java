@@ -10,12 +10,12 @@ import static Pages.Base.BasePage.driver;
 
 public class DeleteIbanFromPayee {
     WaitUtils waitUtils = new WaitUtils(driver);  // Initialize WaitUtils with the driver
-    //@Test
-    public void deletepayeeAction() throws InterruptedException {
+
+    public void deleteIbanFromPayeeAction() throws InterruptedException {
         ConfigReader configReader = new ConfigReader("src/main/resources/config.properties");
         By deleteBtn = new By.ByXPath("//XCUIElementTypeButton[@name=\"delete\"]");
         By deleteBtn2 = new By.ByXPath("//XCUIElementTypeStaticText[@name=\"Delete\"]");
-        By completedsuccessfully = new By.ByXPath("//XCUIElementTypeStaticText[@name=\"Completed Successfully!\"]");
+        By completedSuccessfully = new By.ByXPath("//XCUIElementTypeStaticText[@name=\"Completed Successfully!\"]");
         By doneBtn = new By.ByXPath("//XCUIElementTypeStaticText[@name=\"Done\"]");
         By paymentsLocator = GlobalLocators.paymentsMenu();
         By payanyoneLocator = GlobalLocators.payanyoneMenu();
@@ -27,7 +27,7 @@ public class DeleteIbanFromPayee {
         //System.out.println("IBAN Found");
         driver.findElement(deleteBtn).click();
         driver.findElement(deleteBtn2).click();
-        waitUtils.waitForElementToBeClickable(completedsuccessfully).isDisplayed();
+        waitUtils.waitForElementToBeClickable(completedSuccessfully).isDisplayed();
         System.out.println("Payee Deleted Successfully");
         waitUtils.waitForElementToBeClickable(doneBtn);
         GlobalLocators.backBtn();

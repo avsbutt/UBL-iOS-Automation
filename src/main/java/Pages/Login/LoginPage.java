@@ -63,6 +63,5 @@ public class LoginPage {
         }
         driver.findElement(showBalance).isDisplayed();
         System.out.println("Login Success");
-
     }
 }

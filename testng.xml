@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Test">
+        <classes>
+            <class name="TestCases.TC01_Login">
+                <methods>
+                    <!-- <include name="all"/> -->
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC02_PayAnyone_AddIbanToPayee">
+                <methods>
+                    <include name="testAddNewPayee"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
