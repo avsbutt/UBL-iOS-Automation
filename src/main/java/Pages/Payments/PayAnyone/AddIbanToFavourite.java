@@ -10,7 +10,7 @@ import static Pages.Base.BasePage.driver;
 public class AddIbanToFavourite {
     static ConfigReader configReader = new ConfigReader("src/main/resources/config.properties");
     static WaitUtils waitUtils = new WaitUtils(driver);  // Initialize WaitUtils with the driver
-    public static void favouritepayeeAction(){
+    public static void favouritePayeeAction(){
         By paymentsLocator = GlobalLocators.paymentsMenu();
         By payanyoneLocator = GlobalLocators.payanyoneMenu();
         By addFavouriteBtn = new By.ByXPath("");
