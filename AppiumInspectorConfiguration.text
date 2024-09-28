@@ -1,0 +1,43 @@
+Remote Host: Default 127.0.0.1
+Remote Port: Default 4723
+Remote Path: /
+
+iOS Real Device (Current Project)
+{
+  "appium:automationName": "XCUITest",
+  "platformName": "iOS",
+  "appium:udid": "02ad4d6dbd488a06a498398d6c9e1ced8200932f",
+  "appium:wdaLaunchTimeout": "120000",
+  "bundleId": "com.m3tech.ublnetbanking.enterprise223"
+}
+
+---------
+
+iOS Emulator
+{
+  "appium:udid": "10726352-0129-46A1-86AF-90DEC289E963",
+  "appium:platformName": "iOS",
+  "appium:automationName": "XCUITest",
+  "appium:app": "//Users//awaismumtaz//Downloads//My Clinic"
+}
+
+--------
+
+Android Emulator
+{
+  "platformName": "Android",
+  "appium:platformVersion": "14.0",
+  "appium:deviceName": "Pixel 3a",
+  "appium:automationName": "uiautomator2"
+}
+
+--------
+
+Android Real Device
+{
+  "appium:automationName": "uiautomator2",
+  "appium:deviceName": "Samsung SM A515F",
+  "appium:app": "C:\\Users\\O3\\Desktop\\o3QA\\apk folder\\release-1033-v3.26.0-arm64-v8a-protected.apk",
+  "platformName": "Android",
+  "appium:noReset": "true"
+}

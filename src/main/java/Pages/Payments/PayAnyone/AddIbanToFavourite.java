@@ -5,6 +5,7 @@ import Pages.Config.ConfigReader;
 import Utils.ScrollToUtils;
 import Utils.WaitUtils;
 import org.openqa.selenium.By;
+
 import static Pages.Base.BasePage.driver;
 
 public class AddIbanToFavourite {
